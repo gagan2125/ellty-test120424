@@ -1,0 +1,45 @@
+.container {
+  width: 500px;
+  margin-top: 60px;
+}
+
+.card {
+  border: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+.button {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+}
+
+.bigger-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 6px;
+  border-radius: 20px;
+}
+
+.page {
+  position: relative;
+}
+
+.page:hover .blue-hover {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #9adbfbaf;
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+input[type="checkbox"] {
+  outline-color: rgb(0, 0, 0);
+}
