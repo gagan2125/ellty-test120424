@@ -9,6 +9,8 @@
 
 p {
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
 }
 
 .button {
@@ -16,12 +18,42 @@ p {
   height: 50px;
   font-size: 18px;
 }
+hr {
+  margin-top: 10px;
+}
 
 .bigger-checkbox {
   width: 20px;
   height: 20px;
   margin-top: 6px;
   border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Adjust border radius when checkbox is checked */
+.bigger-checkbox:checked {
+  border-radius: 20px;
+}
+
+.bigger-checkbox:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 10px;
+  color: #bdbcbc;
+  background-color: #ffffff00;
+  padding: 1px;
+  border-radius: 20px; /* Maintain consistent border radius */
+  z-index: 1;
+}
+
+.bigger-checkbox:hover {
+  outline: auto #888888;
 }
 
 .page {
@@ -38,8 +70,4 @@ p {
   padding: 5px;
   border-radius: 5px;
   z-index: 1;
-}
-
-input[type="checkbox"] {
-  outline-color: rgb(0, 0, 0);
 }

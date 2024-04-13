@@ -58,72 +58,79 @@ const Card = () => {
           </div>
           <hr />
           <div
-            className={`d-flex justify-content-between page ${
-              page1Checked ? "blue-hover" : ""
-            }`}
-            onDoubleClick={() => handleDoubleClick("page1")}
+            data-bs-spy="scroll"
+            data-bs-smooth-scroll="true"
+            className="scrollspy-example"
+            tabIndex="0"
           >
-            <p>Page 1</p>
-            <input
-              type="checkbox"
-              className="bigger-checkbox"
-              checked={page1Checked}
-              onChange={() => {
-                setPage1Checked(!page1Checked);
-                handleSinglePageChange();
-              }}
-            />
-          </div>
-          <div
-            className={`d-flex justify-content-between page ${
-              page2Checked ? "blue-hover" : ""
-            }`}
-            onDoubleClick={() => handleDoubleClick("page2")}
-          >
-            <p>Page 2</p>
-            <input
-              type="checkbox"
-              className="bigger-checkbox"
-              checked={page2Checked}
-              onChange={() => {
-                setPage2Checked(!page2Checked);
-                handleSinglePageChange();
-              }}
-            />
-          </div>
-          <div
-            className={`d-flex justify-content-between page ${
-              page3Checked ? "blue-hover" : ""
-            }`}
-            onDoubleClick={() => handleDoubleClick("page3")}
-          >
-            <p>Page 3</p>
-            <input
-              type="checkbox"
-              className="bigger-checkbox"
-              checked={page3Checked}
-              onChange={() => {
-                setPage3Checked(!page3Checked);
-                handleSinglePageChange();
-              }}
-            />
-          </div>
-          <div
-            className={`d-flex justify-content-between page ${
-              page4Checked ? "blue-hover" : ""
-            }`}
-            onDoubleClick={() => handleDoubleClick("page4")}
-          >
-            <p>Page 4</p>
-            <input
-              type="checkbox"
-              className="bigger-checkbox"
-              checked={page4Checked}
-              onChange={() => {
-                setPage4Checked(!page4Checked);
-                handleSinglePageChange();
-              }}
-            />
+            <div
+              className={`d-flex justify-content-between page ${
+                page1Checked ? "blue-hover" : ""
+              }`}
+              onDoubleClick={() => handleDoubleClick("page1")}
+            >
+              <p>Page 1</p>
+              <input
+                type="checkbox"
+                className="bigger-checkbox"
+                checked={page1Checked}
+                onChange={() => {
+                  setPage1Checked(!page1Checked);
+                  handleSinglePageChange();
+                }}
+              />
+            </div>
+            <div
+              className={`d-flex justify-content-between page ${
+                page2Checked ? "blue-hover" : ""
+              }`}
+              onDoubleClick={() => handleDoubleClick("page2")}
+            >
+              <p>Page 2</p>
+              <input
+                type="checkbox"
+                className="bigger-checkbox"
+                checked={page2Checked}
+                onChange={() => {
+                  setPage2Checked(!page2Checked);
+                  handleSinglePageChange();
+                }}
+              />
+            </div>
+            <div
+              className={`d-flex justify-content-between page ${
+                page3Checked ? "blue-hover" : ""
+              }`}
+              onDoubleClick={() => handleDoubleClick("page3")}
+            >
+              <p>Page 3</p>
+              <input
+                type="checkbox"
+                className="bigger-checkbox"
+                checked={page3Checked}
+                onChange={() => {
+                  setPage3Checked(!page3Checked);
+                  handleSinglePageChange();
+                }}
+              />
+            </div>
+            <div
+              className={`d-flex justify-content-between page ${
+                page4Checked ? "blue-hover" : ""
+              }`}
+              onDoubleClick={() => handleDoubleClick("page4")}
+            >
+              <p>Page 4</p>
+              <input
+                type="checkbox"
+                className="bigger-checkbox"
+                checked={page4Checked}
+                onChange={() => {
+                  setPage4Checked(!page4Checked);
+                  handleSinglePageChange();
+                }}
+              />
+            </div>
           </div>
           <hr />
           <div className="d-grid gap-2 d-md-block">
